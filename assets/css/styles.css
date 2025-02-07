@@ -1,0 +1,281 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #001A57;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo img {
+    width: 198px;
+    height: 83px;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-icon div {
+    background-color: white;
+    height: 4px;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #011A40;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    right: 0;
+    z-index: 9999999;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.headline {
+    font-family: "Roboto";
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 70.31px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: -120px;
+}
+
+.sparkplane img {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 15%;
+    left: -7.8%;
+
+
+}
+
+.sparkwave img {
+    position: absolute;
+    width: 55px;
+    height: 40px;
+    top: 34%;
+    left: 5%;
+    gap: 0px;
+    border: 3px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.sparkwave1 img {
+    position: absolute;
+    width: 55.77px;
+    height: 31.25px;
+    top: 47%;
+    left: 79%;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.sGirl img {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 55%;
+    /* left: 39%; */
+    gap: 0px;
+    opacity: 0px;
+}
+
+.image-container {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.badge {
+    position: absolute;
+    background-color: #FFD700;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+}
+
+.badge.training {
+    top: 54%;
+    left: 22%;
+    transform: rotate(-15deg);
+}
+
+.badge.top-skill {
+    bottom: 25%;
+    right: 22%;
+    transform: rotate(15deg);
+}
+
+.network img {
+    position: absolute;
+    width: 79.5px;
+    height: 87px;
+    top: 76%;
+    left: 20%;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.fram img {
+    position: absolute;
+    width: 108px;
+    height: 394px;
+    top: 23%;
+    right: -8%;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icons {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.icons div {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 1.5rem;
+    }
+
+    .image-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .menu-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu-icon div {
+        height: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 1.2rem;
+    }
+
+    .menu-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu-icon div {
+        height: 2px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .sparkplane img {
+        position: absolute;
+        width: 70%;
+        height: auto;
+        top: 15%;
+        left: -9.8%;
+    }
+    .fram img {
+        position: absolute;
+        width: 108px;
+        height: 394px;
+        top: 23%;
+        right: -10%;
+        gap: 0px;
+        opacity: 0px;
+    }
+}
